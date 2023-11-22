@@ -27,14 +27,15 @@ with open(log_file_path, 'a') as log_file:
             subprocess.run(['git', 'add', '.'])
             subprocess.run(['git', 'commit', '-m', commit_message])
             # subprocess.run(['git', 'push', repo_url, 'master'])
-            subprocess.run(['git', 'push'])
+            subprocess.run(['git', 'push', '--set-upstream', 'origin', 'main'])
+            
 
             # 寫入成功信息到日誌文件
             log_file.write(f'Successfully pushed changes for {directory_path}\n')
 
         except Exception as e:
             # 寫入例外情況信息到日誌文件
-            log_file.write(f'Error pushing changes for {directory_path}: {str(e)}\n')
+            log_file.write(f'{datetime.now()} Error pushing changes for {directory_path}: {str(e)}\n')
 
 # 提示腳本執行完成
 print('Script execution completed.')
