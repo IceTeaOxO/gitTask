@@ -27,8 +27,8 @@ with open(log_file_path, 'a') as log_file:
             subprocess.run(['git', 'add', '.'])
             subprocess.run(['git', 'commit', '-m', commit_message])
             # subprocess.run(['git', 'push', repo_url, 'master'])
-            subprocess.run(['git', 'push', '--set-upstream', 'origin', 'main'])
-            
+            # subprocess.run(['git', 'push', '--set-upstream', 'origin', 'main'])
+            subprocess.run(['git', 'push'])
 
             # 寫入成功信息到日誌文件
             log_file.write(f'Successfully pushed changes for {directory_path}\n')
