@@ -24,6 +24,7 @@ with open(log_file_path, 'a') as log_file:
             os.chdir(directory_path)
 
             # 執行 Git 命令
+            subprocess.run(['git', 'pull'])
             subprocess.run(['git', 'add', '.'])
             subprocess.run(['git', 'commit', '-m', commit_message])
             # subprocess.run(['git', 'push', repo_url, 'master'])
