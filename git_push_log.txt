@@ -1,0 +1,5 @@
+Error pushing changes for /Documents/GTD: [Errno 2] No such file or directory: '/Documents/GTD'
+Error pushing changes for /Documents/GTD: [Errno 2] No such file or directory: '/Documents/GTD'
+Error pushing changes for Users/huangyoucyuan/Documents/GTD: [Errno 2] No such file or directory: 'Users/huangyoucyuan/Documents/GTD'
+Error pushing changes for User/huangyoucyuan/Documents/GTD: [Errno 2] No such file or directory: 'User/huangyoucyuan/Documents/GTD'
+Successfully pushed changes for /Users/huangyoucyuan/Documents/GTD
